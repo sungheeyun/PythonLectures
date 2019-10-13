@@ -1,4 +1,5 @@
 \documentclass{article}
+\input{mydefs}
 
 \usepackage{fullpage}
 
@@ -18,17 +19,71 @@
 
 \section{Exercises for Beginners}
 
-\begin{itemize}
-\item \href{https://www.practicepython.org/exercise/2014/01/29/01-character-input.html}{Character Input}
+\begin{description}
+\item[Exercise 01]
+\href{https://www.practicepython.org/exercise/2014/01/29/01-character-input.html}{Character Input}
 
-\item \href{https://www.practicepython.org/exercise/2014/02/05/02-odd-or-even.html}{Odd or Even}
+\item[Exercise 02]
+\href{https://www.practicepython.org/exercise/2014/02/05/02-odd-or-even.html}{Odd or Even}
 
-\item \href{https://www.practicepython.org/exercise/2014/02/26/04-divisors.html}{Divisors}
+\item[Exercise 03]
+\href{https://www.practicepython.org/exercise/2014/02/26/04-divisors.html}{Divisors}
 
-\item Create a program that asks the user for a number and then prints out all prime numbers that is less than that number.
+\item[Exercise 04]
+Create a program that asks the user for a number and then prints out all prime numbers that is less than that number.
 (Hint: Think of the definition of a prime number. You can use the piece of code you developed for one of the above problems.
 You will need to use nested for-loops. Ask your instructor if you don't know what nested for-loops are.)
 
-\end{itemize}
+\item[Exercise 04.1]
+Implement a function which takes two numbers, adds them, and returns the result.
+
+\item[Exercise 04.2]
+Implement a function which takes one integer and returns {\tt True} if it is an even number,
+and return {\tt False} otherwise.
+
+\item[Exercise 04.3]
+Implement a function which takes one integer and prints all its divisors.
+
+\item[Exercise 04.4]
+Implement a function named \verb+is_prime+ which takes one integer and returns {\tt True} if it is a prime number,
+and return {\tt False} otherwise.
+
+\item[Exercise 04.5]
+Create a program that asks the user for a number and then prints out all prime numbers that is less than that number
+using a function you implemented above.
+
+\item[Exercise 05 (Optional)]
+Make the prime number printing program more efficient following the steps below.
+
+\begin{enumerate}
+\item Make \verb+is_prime+ faster by cutting down the size of the \verb+for+-loop into half,
+\ie, by changing the \verb+for+-loop as follows:
+\begin{verbatim}
+    for divisor in range(2, int(number/2) + 1):
+        ...
+\end{verbatim}
+
+\item Make \verb+is_prime+ faster by cutting down the size of the \verb+for+-loop even further
+as follows.
+\begin{verbatim}
+    import math
+
+    for divisor in range(2, int(math.sqrt(number)) + 1):
+        ...
+\end{verbatim}
+
+Can you explain why this works?
+
+\item (Advanced) Make \verb+is_prime+ faster by only checking whether the number is divided by primer numbers less than or equal to
+the square root of the number.
+
+
+\end{enumerate}
+
+\end{description}
+
+\end{document}
+
+\end{description}
 
 \end{document}

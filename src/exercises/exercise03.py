@@ -1,6 +1,12 @@
-
-from math import sqrt
+"""
+Print out all divisors of a given number
+"""
 
 number = int(input('number? '))
 
-for number in range(2,int(sqrt(number)) + 1):
+print(1)
+for divisor in range(2, number):
+    if number % divisor == 0:
+        print(divisor)
+
+print(number)
