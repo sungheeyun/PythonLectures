@@ -1,0 +1,12 @@
+
+For Beth
+
+- a program which detects the mistakes in harmonics homework
+- (challenging) a program automatically does the harmonics homework
+- a program finds the largest multiplication of 3-digit number of 2-digit number when each of given 5 digits is placed in one of the 5 positions
+
+
+For Ghayoung
+
+- find database for DNA sequences. read files and find patterns of interest
+- 

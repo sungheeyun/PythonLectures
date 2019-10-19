@@ -1,13 +1,13 @@
 
 def is_prime(number):
-    prime = True
+    _is_prime = True
 
     for d in range(2, number):
         if number % d == 0:
-            prime = False
+            _is_prime = False
             break
 
-    return prime
+    return _is_prime
 
 
 N = 1000
