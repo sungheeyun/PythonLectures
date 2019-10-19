@@ -10,8 +10,9 @@ def is_prime(number):
     return _is_prime
 
 
-N = 1000
+if __name__ == "__main__":
+    N = 1000
 
-for n in range(2, N):
-    if is_prime(n):
-        print(n)
+    for n in range(2, N):
+        if is_prime(n):
+            print(n)
