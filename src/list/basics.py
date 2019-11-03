@@ -1,25 +1,22 @@
 
-
 # variable name
-
-# (alphabet or underbar) + (alphabet or underbar or digits)
-
+# (alphabet or underscore) + (alphabet or underscore or digits)
 
 if __name__ == "__main__":
-    l = ['a', 2, 'c', 4, 5, 6]
-    #    0    1   2   3  4  5
-    # :2 -> 0, 1
-    # 2:5 -> 2, 3, 4
+    my_list = ['a', 2, 'c', 4, 'beth_list', 6]
 
     print('# basic indexing')
 
-    print(l)
-    print(l[0])
-    print(l[1])
-    print(l[2])
-    print(l[3])
+    print(my_list)
+    print(my_list[0])
+    print(my_list[1])
+    print(my_list[2])
+    print(my_list[3])
+    # print(aaaa[100])
 
-    print(l[:2])
-    print(l[2:5])
-    print(l[4:6])
-    print(l[4:100])
+    print(my_list[:2])
+    print(my_list[2:5])
+    print(my_list[4:6])
+
+    print(my_list[3:])
+    print(my_list[3:100])
