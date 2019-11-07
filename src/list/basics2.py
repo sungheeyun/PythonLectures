@@ -24,15 +24,15 @@ if __name__ == "__main__":
     print(beth_list)
     print(last_three(beth_list))
 
-#    print(beth_list[len(beth_list)-1])
-#    print(beth_list[len(beth_list)-3])
-#
-##    print(beth_list[-1])
-#    print(beth_list[-3:-1])
-#    print(beth_list[4:6])
-#
-#    print(beth_list[-5:2])
-#
-    # beth_list = ['a', 2, 'c']
-    # print(banana(beth_list))
-    # print(banana2(beth_list))
+    print(beth_list[len(beth_list)-1])
+    print(beth_list[len(beth_list)-3])
+
+    print(beth_list[-1])
+    print(beth_list[-3:-1])
+    print(beth_list[4:6])
+
+    print(beth_list[-5:2])
+
+    beth_list = ['a', 2, 'c']
+    print(banana(beth_list))
+    print(banana2(beth_list))

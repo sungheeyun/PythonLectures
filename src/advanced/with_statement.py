@@ -3,7 +3,7 @@ class a(object):
         print('sss')
         return 'sss111'
 
-    def __exit__(self ,type, value, traceback):
+    def __exit__(self, type, value, traceback):
         print('ok')
         return False
 
