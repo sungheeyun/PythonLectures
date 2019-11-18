@@ -13,4 +13,3 @@ if __name__ == "__main__":
 
     your_list = [1, 3, 10, 15]
     print(max_of_list(your_list))
-
