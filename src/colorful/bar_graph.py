@@ -13,9 +13,16 @@ if __name__ == "__main__":
     )
     print(data_frame)
 
-    data_frame.plot.bar()
-    data_frame.plot.pie(y='market share')
-    plt.show()
+    fig, ax = plt.subplots()
+    data_frame.plot.bar(ax=ax)
+    fig.show()
+
+    fig, ax = plt.subplots()
+    data_frame.plot.pie(ax=ax, y='market share')
+    fig.show()
+
+    if '__file__' in dir():
+        plt.show()
 
 
 
