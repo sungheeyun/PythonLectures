@@ -154,7 +154,7 @@ months = { 1 : "January",
 	\item Print all keys
 
 	\begin{verbatim}
-print("The dictionary contains the following keys: ", months.keys())
+print("The dictionary contains the following keys: ", list(months.keys()))
 	\end{verbatim}
 Output:
 	\begin{verbatim}
@@ -174,27 +174,28 @@ Output:
 January
 	\end{verbatim}
 
-	\item To delete an element from a dictionary, use {\tt del}
+	\item To delete an element from a dictionary, use {\tt dict.pop}
 
 
 	\begin{verbatim}
-del(months[5])
+print(months.pop(5))
 print(months.keys())
 	\end{verbatim}
 Output:
 	\begin{verbatim}
+May
 [1, 2, 3, 4, 6, 7, 8, 9, 10, 11, 12]
 	\end{verbatim}
 
 \item To add a new element to a dictionary, assign a value to a new key
 
 	\begin{verbatim}
-months[5] = "May"
+months[5] = "MAY"
 print(months.keys())
 	\end{verbatim}
 Output:
 	\begin{verbatim}
-[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+[1, 2, 3, 4, 6, 7, 8, 9, 10, 11, 12, 5]
 	\end{verbatim}
 
 \item To update an element of a dictionary, assign a new value to its key
@@ -227,11 +228,11 @@ for key in months:
 	\end{verbatim}
 Output:
 	\begin{verbatim}
-1 January
+1 Jan
 2 February
 3 March
 4 April
-5 May
+5 MAY
 6 June
 7 July
 8 August
