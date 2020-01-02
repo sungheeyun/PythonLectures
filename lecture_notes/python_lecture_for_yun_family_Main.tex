@@ -9,6 +9,9 @@
 \begin{document}
 \maketitle
 
+\tableofcontents
+
+\newpage
 \section{Introduction}
 
 \subsection{Why learn computer programming?}
@@ -94,8 +97,233 @@ So I'm planning to keep this lecture series as long as I can or until they can l
 
 XXX
 
+\newpage
+\section{Python Basics}
+
+\subsection{Python Dictionary}
+\subsubsection{Dictionary Manipulation in Python}
+\paragraph{Overview}
+\begin{itemize}
+	\item A dictionary is a collection of key-value pairs. 
+
+	\item A dictionary is a set of key:value pairs. 
+
+	\item All keys in a dictionary must be unique.
+
+	\item In a dictionary, a key and its value are separated by a colon.
+
+	\item The key, value pairs are separated with commas.
+
+	\item The key \& value pairs are listed between curly brackets ``\{ \}''
+
+	\item We query the dictionary using square brackets ``[\ ]''
+\end{itemize}
+
+\paragraph{Dictionary Manipulation}
 
 
+\begin{itemize}
+	\item Dictionaries are useful whenever you have to items that you wish to link together,
+	and for example storing results for quick lookup.
+
+	\item Create an empty dictionary
+	\begin{verbatim}
+months = {}
+	\end{verbatim}
+
+	\item Create a dictionary with some pairs (Note: Each key must be unique)
+
+	\begin{verbatim}
+months = { 1 : "January", 
+    2 : "February", 
+    3 : "March", 
+    4 : "April", 
+    5 : "May", 
+    6 : "June", 
+    7 : "July",
+    8 : "August",
+    9 : "September", 
+    10 : "October", 
+    11 : "November",
+    12 : "December" } 
+	\end{verbatim}
+
+
+	\item months ``1--12'' are keys and ``January-December'' are the values
+
+	\item Print all keys
+
+	\begin{verbatim}
+print("The dictionary contains the following keys: ", months.keys())
+	\end{verbatim}
+Output:
+	\begin{verbatim}
+The dictionary contains the following keys:  [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+	\end{verbatim}
+
+	\item Accessing
+
+	To get a value out of a dictionary, you must supply its key, you cannot provide
+	the value and get the key
+	\begin{verbatim}
+whichMonth = months[1]
+print(whichMonth)
+	\end{verbatim}
+Output:
+	\begin{verbatim}
+January
+	\end{verbatim}
+
+	\item To delete an element from a dictionary, use {\tt del}
+
+
+	\begin{verbatim}
+del(months[5])
+print(months.keys())
+	\end{verbatim}
+Output:
+	\begin{verbatim}
+[1, 2, 3, 4, 6, 7, 8, 9, 10, 11, 12]
+	\end{verbatim}
+
+\item To add a new element to a dictionary, assign a value to a new key
+
+	\begin{verbatim}
+months[5] = "May"
+print(months.keys())
+	\end{verbatim}
+Output:
+	\begin{verbatim}
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+	\end{verbatim}
+
+\item To update an element of a dictionary, assign a new value to its key
+	\begin{verbatim}
+months[1] = "Jan"
+print(months)
+	\end{verbatim}
+Output:
+	\begin{verbatim}
+{1: 'Jan', 2: 'February', 3: 'March', 4: 'April', 5... }
+	\end{verbatim}
+
+\item Sorting
+
+	\begin{verbatim}
+sortedkeys = sorted(months.keys())
+print(sortedkeys)
+	\end{verbatim}
+Output:
+	\begin{verbatim}
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+	\end{verbatim}
+
+\item Dictionaries and Loops
+	\begin{itemize}
+	\item Iterating over keys
+	\begin{verbatim}
+for key in months:
+    print(key, months[key])
+	\end{verbatim}
+Output:
+	\begin{verbatim}
+1 January
+2 February
+3 March
+4 April
+5 May
+6 June
+7 July
+8 August
+9 September
+10 October
+11 November
+12 December
+	\end{verbatim}
+	\item Iterating over (key, value) pairs
+	\begin{verbatim}
+for key, value in months.items():
+    print(key, value)
+
+print "The entries in the dictionary are:"
+for item in months.keys():
+    print("months[ ", item, " ] = ", months[item])
+	\end{verbatim}
+	\end{itemize}
+\item Combining List and Dictionary
+
+Example of a list of dictionaries
+	\begin{verbatim}
+customers = [
+    {"uid":1,"name":"John"},
+    {"uid":2,"name":"Smith"},
+    {"uid":3,"name":"Andersson"},
+]
+print(customers)
+	\end{verbatim}
+Output:
+	\begin{verbatim}
+[{'uid': 1, 'name': 'John'}, {'uid': 2, 'name': 'Smith'}, {'uid': 3, 'name': 'Andersson'}]
+	\end{verbatim}
+
+\item Print the uid and name of each customer
+	\begin{verbatim}
+for x in customer:
+    print(x["uid"], x["name"])
+	\end{verbatim}
+Output:
+	\begin{verbatim}
+1 John
+2 Smith
+3 Andersson
+	\end{verbatim}
+
+\item Modify an entry
+
+This will change the name of customer 2 from Smith to Charlie
+	\begin{verbatim}
+customers[2]["name"]="charlie"
+print(customers)
+	\end{verbatim}
+Output:
+	\begin{verbatim}
+[{'uid': 1, 'name': 'John'}, {'uid': 2, 'name': 'Smith'}, {'uid': 3, 'name': 'charlie'}]
+	\end{verbatim}
+\item Add a new field to each entry
+	\begin{verbatim}
+for x in customers:
+    x["password"]="123456" # any initial value
+
+print(customers)
+	\end{verbatim}
+Output:
+	\begin{verbatim}
+[{'password': '123456', 'uid': 1, 'name': 'John'}, {'password': '123456', 'uid': 2,
+    'name': 'Smith'}, {'password': '123456', 'uid': 3, 'name': 'Andersson'}]
+	\end{verbatim}
+
+\item Delete a field
+	\begin{verbatim}
+del customers[1]
+print(customers)
+	\end{verbatim}
+Output:
+	\begin{verbatim}
+[{'uid': 1, 'name': 'John'}, {'uid': 3, 'name': 'Andersson'}]
+	\end{verbatim}
+
+\item Delete all fields
+
+This will delete id field of each entry.
+	\begin{verbatim}
+for x in customers:
+    del x["id"]
+	\end{verbatim}
+Output:
+	\begin{verbatim}
+[{'name': 'John'}, {'name': 'Smith'}, {'name': 'Andersson'}]
+	\end{verbatim}
+\end{itemize}
 
 \newpage
 \bibliography{mybib}{}
