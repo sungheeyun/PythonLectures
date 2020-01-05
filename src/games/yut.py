@@ -33,7 +33,6 @@ class Yut:
 
         axis.plot(Yut.x_list + x_shift, Yut.y_list, *args, **kwargs)
 
-        print(self.result)
         if self.result == 0:
             axis.plot(Yut.x_cross_list + x_shift, Yut.y_cross_list_1, *args, **kwargs)
             axis.plot(Yut.x_cross_list + x_shift, Yut.y_cross_list_2, *args, **kwargs)
