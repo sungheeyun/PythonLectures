@@ -19,7 +19,7 @@ if __name__ == "__main__":
     yut_set: YutSet = YutSet(axis)
 
     first: bool = True
-    while not input('throw! '):
+    while not input("throw! "):
         yut_set.throw()
         figure.canvas.draw()
         figure.canvas.flush_events()
@@ -27,6 +27,3 @@ if __name__ == "__main__":
         if first:
             figure.show()
         first = False
-
-
-
