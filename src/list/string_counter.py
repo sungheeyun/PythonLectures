@@ -1,4 +1,3 @@
-
 def string_counter(my_list):
     counter = 0
     for string in my_list:
@@ -9,6 +8,6 @@ def string_counter(my_list):
 
 
 if __name__ == "__main__":
-    sample_list = ['abc', 'xyz', 'aba', '1221', 'A', 'b']
+    sample_list = ["abc", "xyz", "aba", "1221", "A", "b"]
 
     print(string_counter(sample_list))

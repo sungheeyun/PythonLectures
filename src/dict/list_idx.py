@@ -1,5 +1,3 @@
-
-
 def list_idx(my_list):
     d = {}
 
@@ -12,7 +10,7 @@ def list_idx(my_list):
 
 
 if __name__ == "__main__":
-    your_list = [chr(ord('a') + idx) for idx in range(26)]
+    your_list = [chr(ord("a") + idx) for idx in range(26)]
 
     print(your_list)
 
@@ -21,4 +19,3 @@ if __name__ == "__main__":
     print(d["a"])
     print(d["b"])
     print(d["e"])
-

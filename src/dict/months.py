@@ -30,4 +30,4 @@ if __name__ == "__main__":
 
     print("---- KEY/VALUE PAIR ----")
     for key, value in sorted(months.items()):
-        print("months[", key, "] =",  value)
+        print("months[", key, "] =", value)

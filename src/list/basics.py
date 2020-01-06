@@ -1,11 +1,10 @@
-
 # variable name
 # (alphabet or underscore) + (alphabet or underscore or digits)
 
 if __name__ == "__main__":
-    my_list = ['a', 2, 'c', 4, 'beth_list', 6]
+    my_list = ["a", 2, "c", 4, "beth_list", 6]
 
-    print('# basic indexing')
+    print("# basic indexing")
 
     print(my_list)
     print(my_list[0])

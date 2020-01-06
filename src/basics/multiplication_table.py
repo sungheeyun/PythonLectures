@@ -1,4 +1,3 @@
-
 def m_table(n):
     """
     Prints a multiplication table for n.
@@ -8,9 +7,9 @@ def m_table(n):
     n :
         Integer for which multiplication table is printed.
     """
-    print('>>', n)
+    print(">>", n)
     for x in range(2, 10):
-        print('\t', n, 'x', x, '=', n * x)
+        print("\t", n, "x", x, "=", n * x)
 
 
 def table_9_9():

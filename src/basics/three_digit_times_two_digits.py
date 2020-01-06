@@ -21,10 +21,10 @@ def find_max_combination(digit_list):
             max_value = product
             max_sequence = sequence
 
-    return max_value, '%d%d%d x %d%d' % max_sequence
+    return max_value, "%d%d%d x %d%d" % max_sequence
 
 
 if __name__ == "__main__":
     t0 = time()
     print(find_max_combination([9, 7, 5, 4, 3]))
-    print('The calculation took %g sec.' % (time() - t0))
+    print("The calculation took %g sec." % (time() - t0))

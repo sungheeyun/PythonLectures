@@ -1,4 +1,3 @@
-
 def is_empty_2(my_list):
     return len(my_list) == 0
 
@@ -23,6 +22,6 @@ if __name__ == "__main__":
     your_list = []
 
     if is_empty_1(your_list):
-        print(your_list, 'is empty!')
+        print(your_list, "is empty!")
     else:
-        print(your_list, 'is NOT empty!')
+        print(your_list, "is NOT empty!")

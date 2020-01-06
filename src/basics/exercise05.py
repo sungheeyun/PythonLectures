@@ -1,4 +1,3 @@
-
 def is_prime(number):
     _is_prime = True
 

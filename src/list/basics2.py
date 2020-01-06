@@ -1,5 +1,3 @@
-
-
 def foo(my_list):
     return my_list[len(my_list) - 1]
 
@@ -18,14 +16,14 @@ def last_three(my_list):
 
 if __name__ == "__main__":
 
-    beth_list = ['a', 2, 'c', 4, 5, 6, 7, 'beth', 'ghayoung']
+    beth_list = ["a", 2, "c", 4, 5, 6, 7, "beth", "ghayoung"]
     beth_list = list(range(10))
 
     print(beth_list)
     print(last_three(beth_list))
 
-    print(beth_list[len(beth_list)-1])
-    print(beth_list[len(beth_list)-3])
+    print(beth_list[len(beth_list) - 1])
+    print(beth_list[len(beth_list) - 3])
 
     print(beth_list[-1])
     print(beth_list[-3:-1])
@@ -33,6 +31,6 @@ if __name__ == "__main__":
 
     print(beth_list[-5:2])
 
-    beth_list = ['a', 2, 'c']
+    beth_list = ["a", 2, "c"]
     print(banana(beth_list))
     print(banana2(beth_list))

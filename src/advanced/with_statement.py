@@ -1,10 +1,10 @@
 class a(object):
     def __enter__(self):
-        print('sss')
-        return 'sss111'
+        print("sss")
+        return "sss111"
 
     def __exit__(self, type, value, traceback):
-        print('ok')
+        print("ok")
         return False
 
 

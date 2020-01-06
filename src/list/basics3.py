@@ -1,4 +1,3 @@
-
 if __name__ == "__main__":
 
     my_list = []
@@ -11,7 +10,7 @@ if __name__ == "__main__":
     my_list.append(2)
     print(my_list)
 
-    my_list.append('beth_list')
+    my_list.append("beth_list")
     print(my_list)
 
     my_list.append([1, 2, 3])
@@ -27,4 +26,4 @@ if __name__ == "__main__":
     print(my_list)
     print(len(my_list))
 
-    your_list = ['a', 'b', 'c', 'b', 'a']
+    your_list = ["a", "b", "c", "b", "a"]

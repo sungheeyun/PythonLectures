@@ -26,4 +26,4 @@ def factorial_recursion(n):
 
 if __name__ == "__main__":
     m = 10
-    print(m, '! =', factorial_recursion(m))
+    print(m, "! =", factorial_recursion(m))

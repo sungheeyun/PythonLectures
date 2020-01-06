@@ -27,4 +27,4 @@ def factorial(n):
 
 if __name__ == "__main__":
     m = 10
-    print(m, '! =', factorial(m))
+    print(m, "! =", factorial(m))
