@@ -19,8 +19,11 @@ if __name__ == "__main__":
     yut_set: YutSet = YutSet(axis)
 
     first: bool = True
+    count = 0
     while not input("throw! "):
         yut_set.throw()
+        count += 1
+        axis.set_title(count)
         figure.canvas.draw()
         figure.canvas.flush_events()
 
